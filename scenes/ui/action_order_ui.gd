@@ -29,12 +29,16 @@ func do_turns() -> void:
 	action_order[0].do_turn()
 	
 func _on_entity_action_completed() -> void:
+	# to prevent overlap of actions (simultaneous acting)
 	await get_tree().create_timer(0.2).timeout
-	if action_order_index == action_order.size()-1:
-		action_order_index = 0
-		Events.enemy_turn_ended.emit()
-		return
-	action_order_index += 1
-	var next_entity = action_order[action_order_index]
-	if next_entity:
-		next_entity.do_turn()
+	
+	while action_order_index < action_order.size() - 1:
+		action_order_index += 1 # index moves to current actor
+		var next_entity = action_order[action_order_index]
+		if is_instance_valid(next_entity):
+			next_entity.do_turn()
+			return
+	
+	action_order_index = 0
+	Events.enemy_turn_ended.emit()
+	return
