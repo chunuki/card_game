@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="StageEnemyInfo" format=3 uid="uid://d03r16fg121gw"]
+
+[ext_resource type="Script" uid="uid://b6jdtse7bmra1" path="res://custom_resources/enemy_stats.gd" id="1_5lmh2"]
+[ext_resource type="Resource" uid="uid://csacafptslqcv" path="res://enemies/bat/bat_enemy.tres" id="3_5lmh2"]
+[ext_resource type="Resource" uid="uid://dvple6io3r6sf" path="res://enemies/ghost/ghost_enemy.tres" id="3_5sbkt"]
+[ext_resource type="Script" uid="uid://b6w5f15sylri0" path="res://custom_resources/stage_enemy_info.gd" id="4_733ee"]
+
+[resource]
+script = ExtResource("4_733ee")
+enemies = Array[ExtResource("1_5lmh2")]([ExtResource("3_5sbkt"), ExtResource("3_5lmh2")])
+enemy_positions = Array[Vector2]([Vector2(700, 250), Vector2(850, 280)])
+metadata/_custom_type_script = "uid://b6w5f15sylri0"

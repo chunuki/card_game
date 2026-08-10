@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qveivl01voto"]
+
+[ext_resource type="Script" uid="uid://ldfhp7mdjvei" path="res://scenes/player/player.gd" id="1_mxepk"]
+[ext_resource type="Texture2D" uid="uid://61jwvveyb5gw" path="res://art/char_panda.png" id="2_gmlin"]
+[ext_resource type="PackedScene" uid="uid://2qdful35043q" path="res://scenes/ui/stats_ui.tscn" id="2_mxepk"]
+
+[node name="Player" type="Node2D" unique_id=1617301212 groups=["player"]]
+script = ExtResource("1_mxepk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1700554213]
+scale = Vector2(2, 2)
+texture = ExtResource("2_gmlin")
+
+[node name="StatsUI" parent="." unique_id=1346020447 instance=ExtResource("2_mxepk")]
+offset_left = -66.5
+offset_top = 60.0
+offset_right = 66.5
+offset_bottom = 130.0

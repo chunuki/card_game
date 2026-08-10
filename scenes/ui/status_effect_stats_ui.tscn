@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bq516se600u61"]
+
+[ext_resource type="Texture2D" uid="uid://f7tgpjiguspe" path="res://art/tile_0129.png" id="1_4f2co"]
+[ext_resource type="Script" uid="uid://bn5wsc672s84d" path="res://scenes/ui/status_effect_stats_ui.gd" id="1_g65sw"]
+
+[node name="StatusEffectStatsUI" type="HBoxContainer" unique_id=796705219]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+script = ExtResource("1_g65sw")
+
+[node name="StatusImage" type="TextureRect" parent="." unique_id=777382933]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("1_4f2co")
+expand_mode = 1
+
+[node name="StatusLabel" type="Label" parent="." unique_id=1420140910]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.26666668, 1)
+theme_override_font_sizes/font_size = 15
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

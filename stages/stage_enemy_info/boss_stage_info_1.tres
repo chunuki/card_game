@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BossStageInfo" format=3 uid="uid://d1cdgtm2uss81"]
+
+[ext_resource type="Script" uid="uid://bqhqfg5r21l8e" path="res://custom_resources/card.gd" id="1_i2mp7"]
+[ext_resource type="Script" uid="uid://b6jdtse7bmra1" path="res://custom_resources/enemy_stats.gd" id="2_h1ow8"]
+[ext_resource type="Resource" uid="uid://dmxcjaq7cy6b2" path="res://characters/warrior/cards/warrior_slash.tres" id="2_tcs4q"]
+[ext_resource type="Resource" uid="uid://bk5c8jrgiadd8" path="res://enemies/cyclops/cyclops_enemy.tres" id="3_h1ow8"]
+[ext_resource type="Script" uid="uid://cayedqyrrapi" path="res://custom_resources/boss_stage_info.gd" id="3_jciu1"]
+[ext_resource type="Resource" uid="uid://dlquqow6yiocp" path="res://characters/warrior/cards/warrior_multihit.tres" id="3_slx4a"]
+
+[resource]
+script = ExtResource("3_jciu1")
+card_rewards = Array[ExtResource("1_i2mp7")]([ExtResource("2_tcs4q"), ExtResource("3_slx4a")])
+enemies = Array[ExtResource("2_h1ow8")]([ExtResource("3_h1ow8")])
+enemy_positions = Array[Vector2]([Vector2(750, 280)])
+metadata/_custom_type_script = "uid://cayedqyrrapi"

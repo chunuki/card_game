@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://dlquqow6yiocp"]
+
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="1_u6eet"]
+[ext_resource type="Script" uid="uid://ta0ixaanpaix" path="res://characters/warrior/cards/warrior_multihit.gd" id="2_u6eet"]
+
+[resource]
+script = ExtResource("2_u6eet")
+id = "warrior_multihit"
+target = 1
+number = 3
+cost = 2
+icon = ExtResource("1_u6eet")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%d[/color] damage 3 times.[/center]"
+metadata/_custom_type_script = "uid://bqhqfg5r21l8e"

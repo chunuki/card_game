@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://wpo5s5pyahrp"]
+
+[ext_resource type="Script" uid="uid://cni3580tjghxd" path="res://scenes/stage_select/stage_ui.gd" id="1_gkq00"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="2_xd4tm"]
+
+[node name="StageUI" type="Control" unique_id=522693139]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 80.0
+script = ExtResource("1_gkq00")
+
+[node name="Panel" type="Panel" parent="." unique_id=1318860043]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StageLabel" type="Label" parent="." unique_id=751852034]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.5
+offset_top = -21.0
+offset_right = 16.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "1-1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StageImage" type="TextureRect" parent="." unique_id=1244379711]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -27.0
+offset_right = 23.0
+offset_bottom = 50.0
+grow_horizontal = 2
+texture = ExtResource("2_xd4tm")
+expand_mode = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

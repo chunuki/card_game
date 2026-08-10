@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3 uid="uid://k34aoqm5w5wv"]
+
+[ext_resource type="Texture2D" uid="uid://f7tgpjiguspe" path="res://art/tile_0129.png" id="1_28h0q"]
+[ext_resource type="Script" uid="uid://dya2wrnvlj125" path="res://effects/status_effects/strength_effect.gd" id="2_28h0q"]
+
+[resource]
+script = ExtResource("2_28h0q")
+description = "%s: Attacks deal %s more damage."
+icon_label = ExtResource("1_28h0q")
+metadata/_custom_type_script = "uid://2h8fmh52tw3a"

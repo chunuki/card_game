@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://c2f52ixpjb1jb"]
+
+[ext_resource type="Script" uid="uid://pqxyx0wdi43n" path="res://custom_resources/stage.gd" id="1_nsjbq"]
+[ext_resource type="Resource" uid="uid://d1cdgtm2uss81" path="res://stages/stage_enemy_info/boss_stage_info_1.tres" id="2_nsjbq"]
+
+[resource]
+script = ExtResource("1_nsjbq")
+type = 1
+stage_info = ExtResource("2_nsjbq")
+metadata/_custom_type_script = "uid://pqxyx0wdi43n"

@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b7mf10epj5cva"]
+
+[ext_resource type="Texture2D" uid="uid://61jwvveyb5gw" path="res://art/char_panda.png" id="1_2yonm"]
+[ext_resource type="Script" uid="uid://dfreu0osesj8v" path="res://scenes/ui/action_order_ui.gd" id="1_tcj1b"]
+[ext_resource type="Script" uid="uid://b3qca6w8vfcwv" path="res://scenes/ui/action_order_container.gd" id="2_dfcjh"]
+[ext_resource type="Texture2D" uid="uid://s3ba0ggoil3o" path="res://art/enemy_campfire.png" id="2_tcj1b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3dp2i"]
+bg_color = Color(0.17553604, 0.23478758, 0.2723315, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.7, 0.7, 0.7, 1)
+
+[node name="ActionOrderUI" type="Control" unique_id=55146603]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 356.0
+offset_bottom = 64.0
+script = ExtResource("1_tcj1b")
+
+[node name="Panel" type="Panel" parent="." unique_id=220867702]
+modulate = Color(1, 1, 1, 0.70980394)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3dp2i")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1874026865]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="ActionOrderLabel" type="Label" parent="HBoxContainer" unique_id=1975321673]
+layout_mode = 2
+text = "Action Order:"
+vertical_alignment = 1
+
+[node name="ActionOrderContainer" type="HBoxContainer" parent="HBoxContainer" unique_id=685642249]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("2_dfcjh")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/ActionOrderContainer" unique_id=752288726]
+layout_mode = 2
+texture = ExtResource("1_2yonm")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/ActionOrderContainer" unique_id=1655587711]
+layout_mode = 2
+texture = ExtResource("2_tcj1b")

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c7wfv8h6njhbr"]
+
+[ext_resource type="Script" uid="uid://cgx3agelpjlvp" path="res://scenes/ui/deck_panel.gd" id="1_sbexm"]
+[ext_resource type="PackedScene" uid="uid://7u5puiwpm3gf" path="res://scenes/ui/tooltip.tscn" id="1_wrkd6"]
+[ext_resource type="Script" uid="uid://d3iuye0furnaw" path="res://scenes/ui/card_grid_container.gd" id="2_sbexm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecae1"]
+bg_color = Color(0, 0, 0, 0.58431375)
+
+[node name="DeckPanel" type="Panel" unique_id=949442384]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ecae1")
+script = ExtResource("1_sbexm")
+
+[node name="Tooltip" parent="." unique_id=1823962011 instance=ExtResource("1_wrkd6")]
+z_index = 1
+layout_mode = 1
+offset_top = 20.0
+offset_bottom = 124.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1548119259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=1064832447]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 80
+
+[node name="CardGridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer" unique_id=987360640]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(760, 0)
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 20
+columns = 6
+script = ExtResource("2_sbexm")

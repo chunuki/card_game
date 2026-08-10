@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://7u5puiwpm3gf"]
+
+[ext_resource type="Theme" uid="uid://by14vbq3ef0ne" path="res://main_theme.tres" id="1_nu8i1"]
+[ext_resource type="Script" uid="uid://d4exdd3c2kykd" path="res://scenes/ui/tooltip.gd" id="2_g1xtw"]
+[ext_resource type="Texture2D" uid="uid://ck1t4hdip6xrl" path="res://art/tile_0119.png" id="2_noytm"]
+
+[node name="Tooltip" type="PanelContainer" unique_id=1823962011]
+custom_minimum_size = Vector2(400, 130)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_right = 200.0
+offset_bottom = 130.0
+grow_horizontal = 2
+theme = ExtResource("1_nu8i1")
+script = ExtResource("2_g1xtw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1287484565]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=772918225]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TooltipIcon" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=1751944053]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture = ExtResource("2_noytm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TooltipText" type="RichTextLabel" parent="MarginContainer/VBoxContainer" unique_id=337398183]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/line_separation = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "penile ejaculation
+penis"
+horizontal_alignment = 1

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://dl10pk077b75"]
+
+[ext_resource type="Script" uid="uid://pqxyx0wdi43n" path="res://custom_resources/stage.gd" id="1_jomko"]
+[ext_resource type="Script" uid="uid://bqhqfg5r21l8e" path="res://custom_resources/card.gd" id="1_p2ldh"]
+[ext_resource type="Resource" uid="uid://d03r16fg121gw" path="res://stages/stage_enemy_info/stage_enemy_info_2.tres" id="2_jomko"]
+
+[resource]
+script = ExtResource("1_jomko")
+stage_info = ExtResource("2_jomko")
+metadata/_custom_type_script = "uid://pqxyx0wdi43n"

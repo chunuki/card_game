@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Stage" format=3 uid="uid://l826xxssw85y"]
+
+[ext_resource type="Script" uid="uid://pqxyx0wdi43n" path="res://custom_resources/stage.gd" id="1_uust0"]
+[ext_resource type="Resource" uid="uid://b86i4jdvsifu8" path="res://stages/stage_enemy_info/stage_enemy_info_3.tres" id="2_pe1uu"]
+
+[resource]
+script = ExtResource("1_uust0")
+stage_info = ExtResource("2_pe1uu")
+metadata/_custom_type_script = "uid://pqxyx0wdi43n"

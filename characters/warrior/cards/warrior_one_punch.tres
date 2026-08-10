@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://b0qovd0cxih6g"]
+
+[ext_resource type="Texture2D" uid="uid://b1nj6u7dxl3mh" path="res://art/tile_0085.png" id="1_frjaq"]
+[ext_resource type="Script" uid="uid://d0rbaxw3j6cfg" path="res://characters/warrior/cards/warrior_one_punch.gd" id="2_qi4ob"]
+[ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://art/axe.ogg" id="3_ootfe"]
+
+[resource]
+script = ExtResource("2_qi4ob")
+id = "warrior_one_punch"
+target = 2
+number = 999
+icon = ExtResource("1_frjaq")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%d[/color] damage.[/center]"
+sound = ExtResource("3_ootfe")
+metadata/_custom_type_script = "uid://bqhqfg5r21l8e"

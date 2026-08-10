@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://crgqjp7gl65xv"]
+
+[ext_resource type="Script" uid="uid://d7buimqfxrqr" path="res://scenes/card_ui/card_ui_simple.gd" id="1_4833d"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="2_1o35n"]
+
+[node name="CardUISimple" type="Control" unique_id=200513857]
+custom_minimum_size = Vector2(90, 110)
+layout_mode = 3
+anchor_right = 0.09765625
+anchor_bottom = 0.20833333
+offset_right = -3.75
+offset_bottom = -2.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4833d")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="." unique_id=139551217]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Cost" type="Label" parent="." unique_id=950654423]
+layout_mode = 1
+offset_right = 30.0
+offset_bottom = 35.0
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Icon" type="TextureRect" parent="." unique_id=26159844]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.5
+offset_top = -18.5
+offset_right = 18.5
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_1o35n")
+expand_mode = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

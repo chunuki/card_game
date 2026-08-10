@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://cvuvex2hylmbh"]
+
+[ext_resource type="Texture2D" uid="uid://cn2c1psh561cc" path="res://art/tile_0127.png" id="1_lapsp"]
+[ext_resource type="Script" uid="uid://dcev5b2v3hqj8" path="res://characters/warrior/cards/warrior_strength.gd" id="2_lapsp"]
+[ext_resource type="Resource" uid="uid://k34aoqm5w5wv" path="res://effects/status_effects/strength_effect.tres" id="3_bunxl"]
+
+[resource]
+script = ExtResource("2_lapsp")
+id = "warrior_strength"
+type = 1
+cost = 1
+status_effect = ExtResource("3_bunxl")
+icon = ExtResource("1_lapsp")
+tooltip_text = "[center]Gain [color=\"ff0000\"]1[/color] Strength.[/center]"
+metadata/_custom_type_script = "uid://bqhqfg5r21l8e"

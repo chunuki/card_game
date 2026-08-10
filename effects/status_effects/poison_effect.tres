@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PoisonEffect" format=3 uid="uid://bpm8gu6gjq5l6"]
+
+[ext_resource type="Texture2D" uid="uid://psr6xk3k26oh" path="res://art/tile_0114.png" id="1_m2wc6"]
+[ext_resource type="Script" uid="uid://di0cs7l6yshra" path="res://effects/status_effects/poison_effect.gd" id="2_m2wc6"]
+
+[resource]
+script = ExtResource("2_m2wc6")
+type = 3
+description = "%s: Take %s damage every turn."
+icon_label = ExtResource("1_m2wc6")
+effect_type = 2
+metadata/_custom_type_script = "uid://2h8fmh52tw3a"

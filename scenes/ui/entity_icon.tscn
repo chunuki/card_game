@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dyevev86otfxu"]
+
+[ext_resource type="Texture2D" uid="uid://s3ba0ggoil3o" path="res://art/enemy_campfire.png" id="1_vmbrx"]
+[ext_resource type="Script" uid="uid://bgl0sqd6a3ybw" path="res://scenes/ui/entity_icon.gd" id="2_e15jb"]
+
+[node name="EntityIcon" type="TextureRect" unique_id=1971904073]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vmbrx")
+script = ExtResource("2_e15jb")
