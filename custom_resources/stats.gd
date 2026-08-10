@@ -27,7 +27,9 @@ func add_status_effect(current_effect: StatusEffect, count: int) -> void:
 			effect.count += count
 			stats_changed.emit()
 			return
-	status_effects.append(current_effect)
+	var new_effect = current_effect.duplicate()
+	new_effect.count = count
+	status_effects.append(new_effect)
 	stats_changed.emit()
 	
 func remove_status_effect(type: StatusEffect.Type) -> void:

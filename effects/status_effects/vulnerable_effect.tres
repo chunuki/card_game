@@ -1,4 +1,4 @@
-[gd_resource type="Resource" format=3 uid="uid://clfnh37lday75"]
+[gd_resource type="Resource" script_class="VulnerableEffect" format=3 uid="uid://clfnh37lday75"]
 
 [ext_resource type="Texture2D" uid="uid://boklhiqs1414d" path="res://art/tile_0115.png" id="1_0p77u"]
 [ext_resource type="Script" uid="uid://ceybag8emcwxc" path="res://effects/status_effects/vulnerable_effect.gd" id="2_0p77u"]
@@ -10,4 +10,5 @@ description = "%s: Take 50%% more damage for %s turns."
 icon_label = ExtResource("1_0p77u")
 effect_type = 1
 tickdown = true
+count = 1
 metadata/_custom_type_script = "uid://2h8fmh52tw3a"

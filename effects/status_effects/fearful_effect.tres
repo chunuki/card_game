@@ -1,4 +1,4 @@
-[gd_resource type="Resource" format=3 uid="uid://25ucq2lvupul"]
+[gd_resource type="Resource" script_class="FearfulEffect" format=3 uid="uid://25ucq2lvupul"]
 
 [ext_resource type="Script" uid="uid://dtd4t5t5ulypm" path="res://effects/status_effects/fearful_effect.gd" id="1_a7xdi"]
 [ext_resource type="Texture2D" uid="uid://c24y6l0ivlqp7" path="res://art/tile_0108.png" id="1_hdrbq"]
@@ -8,5 +8,5 @@ script = ExtResource("1_a7xdi")
 type = 4
 description = "%s: The first time HP falls below 50%%, gain %s block."
 icon_label = ExtResource("1_hdrbq")
-count = 15
+count = 1
 metadata/_custom_type_script = "uid://2h8fmh52tw3a"

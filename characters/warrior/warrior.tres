@@ -8,7 +8,6 @@
 [sub_resource type="Resource" id="Resource_wgifn"]
 script = ExtResource("2_wgifn")
 type = 2
-count = 3
 metadata/_custom_type_script = "uid://2h8fmh52tw3a"
 
 [resource]
