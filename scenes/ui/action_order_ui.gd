@@ -29,6 +29,7 @@ func do_turns() -> void:
 	action_order[0].do_turn()
 	
 func _on_entity_action_completed() -> void:
+	await get_tree().create_timer(0.2).timeout
 	if action_order_index == action_order.size()-1:
 		action_order_index = 0
 		Events.enemy_turn_ended.emit()

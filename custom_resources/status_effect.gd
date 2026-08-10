@@ -19,11 +19,7 @@ enum EffectType {
 @export var icon_label: Texture2D
 @export var effect_type: EffectType
 @export var tickdown: bool
-@export var count: int = 0 :
-	set(value):
-		# This print will trace every single time ANY script touches this integer
-		print("COUNT CHANGED: From ", count, " to ", value, " on instance: ", get_instance_id(), " status ", type)
-		count = value
+@export var count: int = 0
 
 var instruction: Callable
 

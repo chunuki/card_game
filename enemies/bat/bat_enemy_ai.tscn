@@ -27,7 +27,6 @@ script = ExtResource("2_06k5i")
 intent = SubResource("Resource_24sye")
 sound = ExtResource("5_8hwcw")
 type = 1
-chance_weight = 3.0
 
 [node name="BatBlockAction" type="Node" parent="." unique_id=1834644653]
 script = ExtResource("3_yq87b")
