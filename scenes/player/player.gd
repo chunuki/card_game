@@ -24,6 +24,7 @@ func _ready() -> void:
 	Events.card_animation_completed.connect(_on_card_animation_completed)
 	
 func _on_card_queued(card: Card, targets: Array) -> void:
+	stats.mana -= card.cost
 	queued_actions.append([card, targets])
 
 func set_character_stats(value: CharacterStats) -> void:
