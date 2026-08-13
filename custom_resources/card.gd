@@ -18,7 +18,7 @@ enum Target {SELF, SINGLE_ENEMY, ALL_ENEMIES, EVERYONE}
 @export var sound: AudioStream
 
 var instructions : Dictionary 
-var instruction_type : String : get = _get_instruction_type
+var instruction_type : String
 var processed_tooltip_text: String : get = _get_processed_tooltip_text
 
 func _get_processed_tooltip_text() -> String:
@@ -41,7 +41,7 @@ func get_default_tooltip_text() -> String:
 func is_single_targeted() -> bool: # check for single target
 	return target == Target.SINGLE_ENEMY
 
-func _get_targets(targets: Array[Node]) -> Array[Node]:
+func _get_targets(_targets: Array[Node]) -> Array[Node]:
 		
 	var tree := Engine.get_main_loop() as SceneTree
 	if not tree:
@@ -61,10 +61,10 @@ func play(targets: Array[Node], char_stats: CharacterStats) -> void:
 	Events.card_played.emit(self)
 	
 	if is_single_targeted():
-		apply_effects(targets)
+		apply_effects(targets, char_stats)
 	else:
-		apply_effects(_get_targets(targets))
+		apply_effects(_get_targets(targets), char_stats)
 	
-func apply_effects(_targets: Array[Node]) -> void:
+func apply_effects(_targets: Array[Node], _char_stats: CharacterStats) -> void:
 	pass
 	

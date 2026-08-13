@@ -9,6 +9,11 @@ var mana: int : set = set_mana
 var deck: CardPile
 var discard: CardPile
 var draw_pile: CardPile
+var instructions: Dictionary = {
+	"damage_modifier" : [],
+	"block_modifier" : [],
+	"damage_taken_modifier" : []
+}
 
 
 func set_mana(value: int) -> void:

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cri6ro8jgb5i1" path="res://enemies/ghost/ghost_enemy_ai.tscn" id="1_20ot8"]
 [ext_resource type="Script" uid="uid://b6jdtse7bmra1" path="res://custom_resources/enemy_stats.gd" id="1_yvvg3"]
 [ext_resource type="Texture2D" uid="uid://s3ba0ggoil3o" path="res://art/enemy_campfire.png" id="2_5msjl"]
-[ext_resource type="Script" uid="uid://2h8fmh52tw3a" path="res://custom_resources/status_effect.gd" id="4_c5pnl"]
+[ext_resource type="Script" uid="uid://2h8fmh52tw3a" path="res://effects/status_effect.gd" id="4_c5pnl"]
 [ext_resource type="Resource" uid="uid://25ucq2lvupul" path="res://effects/status_effects/fearful_effect.tres" id="4_r6e5l"]
 [ext_resource type="Resource" uid="uid://clfnh37lday75" path="res://effects/status_effects/vulnerable_effect.tres" id="5_5msjl"]
 
